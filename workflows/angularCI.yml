@@ -28,3 +28,7 @@ jobs:
       - name: Build app
         run: npm run build --if-present
  
+    - name: Install Chrome
+      run: |
+        sudo apt update
+        sudo apt install -y chromium-browser
